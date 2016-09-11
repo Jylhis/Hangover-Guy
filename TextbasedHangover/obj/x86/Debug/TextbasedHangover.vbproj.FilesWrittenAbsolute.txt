@@ -1,8 +1,0 @@
-/run/media/markus/Data/frosteafk/Port hangoverGuy/VB/TextbasedHangover/obj/x86/Debug/.NETFramework,Version=v4.0,Profile=Client.AssemblyAttribute.vb
-/run/media/markus/Data/frosteafk/Port hangoverGuy/VB/TextbasedHangover/obj/x86/Debug/TextbasedHangover.Form1.resources
-/run/media/markus/Data/frosteafk/Port hangoverGuy/VB/TextbasedHangover/obj/x86/Debug/TextbasedHangover.Help.resources
-/run/media/markus/Data/frosteafk/Port hangoverGuy/VB/TextbasedHangover/obj/x86/Debug/TextbasedHangover.inven.resources
-/run/media/markus/Data/frosteafk/Port hangoverGuy/VB/TextbasedHangover/obj/x86/Debug/TextbasedHangover.Resources.resources
-/run/media/markus/Data/frosteafk/Port hangoverGuy/VB/TextbasedHangover/obj/x86/Debug/TextbasedHangover.start.resources
-/run/media/markus/Data/frosteafk/Port hangoverGuy/VB/TextbasedHangover/obj/x86/Debug/TextbasedHangover.victory.resources
-/run/media/markus/Data/frosteafk/Port hangoverGuy/VB/TextbasedHangover/obj/x86/Debug/TextbasedHangover.exe
