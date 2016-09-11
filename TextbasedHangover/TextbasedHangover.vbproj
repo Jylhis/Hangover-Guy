@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC303179-CC44-48A3-9988-5DCD7048E10A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TextbasedHangover.My.MyApplication</StartupObject>
+    <RootNamespace>TextbasedHangover</RootNamespace>
+    <AssemblyName>TextbasedHangover</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TextbasedHangover.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TextbasedHangover.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inven.Designer.vb">
+      <DependentUpon>inven.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inven.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laatta.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="start.Designer.vb">
+      <DependentUpon>start.vb</DependentUpon>
+    </Compile>
+    <Compile Include="start.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="victory.Designer.vb">
+      <DependentUpon>victory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="victory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inven.resx">
+      <DependentUpon>inven.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="start.resx">
+      <DependentUpon>start.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="victory.resx">
+      <DependentUpon>victory.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap1x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap1y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap2x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap2y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap3x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap3y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap4x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap4y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap5x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap5y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap6x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap6y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap7x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap7y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap8x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap8y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap9x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap9y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap10x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap10y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap11x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap11y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap12x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap12y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap13x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap13y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap14x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap14y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap15x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap15y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap16x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap16y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap17x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap17y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap18x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap18y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap19x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap19y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap20x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap20y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap21x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap21y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap23x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap23y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap24x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap24y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap25x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap25y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap26x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap26y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap27x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap27y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap28x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap28y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap29x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap29y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap30x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap30y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap32x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap32y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap33x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap33y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap34x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap34y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap36x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap36y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap37x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap37y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap38x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap38y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap39x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap39y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap41x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap41y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap43x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap43y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap44x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap44y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap45x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap45y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimaps1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimaps2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimaps3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap49x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap49y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap50x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap50y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap51x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap51y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap52x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap52y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap53x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap53y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap54x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap54y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap55x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap55y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap56x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap56y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap57x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap57y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap58x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap58y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap59x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap59y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap60x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap60y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimap61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paint1.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

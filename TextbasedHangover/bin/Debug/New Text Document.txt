@@ -1,0 +1,541 @@
+Public Class Form1
+
+    Dim laatta As String
+
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+        End
+    End Sub
+
+    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+        MsgBox("HERE COMES HELP")
+    End Sub
+
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+        TextBox1.SelectionStart = TextBox1.Text.Length
+        TextBox1.ScrollToCaret()
+    End Sub
+
+
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        'Pohjoinen
+        Liikunta(laatta, 1)
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        'Länsi
+        Liikunta(laatta, 4)
+    End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        'Etelä
+        Liikunta(laatta, 3)
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        'Itä
+        Liikunta(laatta, 2)
+    End Sub
+
+    Private Sub Liikunta(ByRef laatta, ByVal b) 'vaihtaa laatan yhtä isommaksi tai pienemmäksi, tai sitten pudottaa rotkoon
+
+        Select Case laatta
+
+            Case 0
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap0
+                    TextBox1.Text = TextBox1.Text + "Et jaksa nousta sieltä." & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap1x
+                    laatta = 1
+                    TextBox1.Text = TextBox1.Text + "Menit laatalle 1 " & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimap0
+                    TextBox1.Text = TextBox1.Text + "Törmäsit seinään." & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap0
+                    TextBox1.Text = TextBox1.Text + "Törmäsit seinään." & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+            Case 1
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap2y
+                    laatta = 2
+                    TextBox1.Text = TextBox1.Text + "Menit laatalle 2" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap10x
+                    laatta = 10
+                    TextBox1.Text = TextBox1.Text + "Menit laatalle 10" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimap1y
+                    TextBox1.Text = TextBox1.Text + "Törmäsit seinään idiootti" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap0
+                    laatta = 0
+                    TextBox1.Text = TextBox1.Text + "Menit Takaisin sänkyyn" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+            Case 2
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap3y
+                    laatta = 3
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 3" & vbCrLf & vbCrLf
+
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap9x
+                    laatta = 9
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 9" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimap1y
+                    laatta = 1
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 1" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap2x
+                    TextBox1.Text = TextBox1.Text + "yritit mennä Takaisin sänkyyn" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+            Case 3
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap6y
+                    laatta = 6
+                    TextBox1.Text = TextBox1.Text + "Menit laatalle 6" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap8x
+                    laatta = 8
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 8" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimap2y
+                    laatta = 2
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 1" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap4x
+                    laatta = 4
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 4" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+            Case 4
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap5y
+                    laatta = 5
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 5" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap3x
+                    laatta = 3
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 3" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimap4y
+                    TextBox1.Text = TextBox1.Text + "yritit mennä takaisin sänkyyn" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap4x
+                    TextBox1.Text = TextBox1.Text + "törmäsit seinään" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+
+            Case 5
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap5y
+                    TextBox1.Text = TextBox1.Text + "Törmäsit seinään" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap6x
+                    laatta = 6
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 6" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimap4y
+                    laatta = 4
+                    TextBox1.Text = TextBox1.Text + "Menit Laatalle 4" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap5x
+                    TextBox1.Text = TextBox1.Text + "törmäsit seinään" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+
+            Case 6
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap6y
+                    TextBox1.Text = TextBox1.Text + "törmäsit seinään" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap7x
+                    laatta = 7
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 7" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimap3y
+                    laatta = 3
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 3" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap5x
+                    laatta = 5
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 5" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+
+
+            Case 7
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap7y
+                    TextBox1.Text = TextBox1.Text + "törmäsit seinään" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap7x
+                    TextBox1.Text = TextBox1.Text + "törmäsit kaiteseen" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimap8y
+                    laatta = 8
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 8" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap6x
+                    laatta = 6
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 6" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+
+            Case 8
+
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap7y
+                    laatta = 7
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 7" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap12x
+                    laatta = 12
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 12" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimap9y
+                    laatta = 9
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 9" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap3x
+                    laatta = 3
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 3" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+
+            Case 9
+
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap8y
+                    laatta = 8
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 8" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap11x
+                    laatta = 11
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 11" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimap10y
+                    laatta = 10
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 10" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap2x
+                    laatta = 2
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 2" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+            Case 10
+
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap9y
+                    laatta = 9
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 9" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap10x
+                    TextBox1.Text = TextBox1.Text + "asdfasdf törmäsit koneeseen" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimap10y
+                    TextBox1.Text = TextBox1.Text + "törmäsit seinään" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap1x
+                    laatta = 1
+                    TextBox1.Text = TextBox1.Text + "menit laataan 1" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+            Case 11
+
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap12y
+                    laatta = 12
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 12" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap11x
+                    TextBox1.Text = TextBox1.Text + "törmäsit seinään" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimap11y
+                    TextBox1.Text = TextBox1.Text + "törmäsit tietokoneeseen" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap9x
+                    laatta = 9
+                    TextBox1.Text = TextBox1.Text + "menit laataan 9" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+
+            Case 12
+
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap41y
+                    laatta = 41
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 41 alakertaan" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap12x
+                    TextBox1.Text = TextBox1.Text + "törmäsit seinään" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimap11y
+                    laatta = 11
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 11" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap8x
+                    laatta = 8
+                    TextBox1.Text = TextBox1.Text + "menit laataan 8" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+            Case 41
+
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap12y
+                    laatta = 12
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 12 yläkertaan" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap41x
+                    TextBox1.Text = TextBox1.Text + "törmäsit seinään" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimaps3
+                    laatta = 48
+                    TextBox1.Text = TextBox1.Text + "istuit sohvalle" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap34x
+                    laatta = 34
+                    TextBox1.Text = TextBox1.Text + "menit laataan 34" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+            Case 48
+
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap41y
+                    laatta = 41
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 41" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimaps3
+                    TextBox1.Text = TextBox1.Text + "istut sohavalla" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimaps3
+                    TextBox1.Text = TextBox1.Text + "et jaksa mennä nojan yli" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimaps2
+                    laatta = 47
+                    TextBox1.Text = TextBox1.Text + "liikuit keskelle sohvaa" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+            Case 39
+
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap39y
+                    TextBox1.Text = TextBox1.Text + "et jaksa hypätä sohvan yli" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap39x
+                    TextBox1.Text = TextBox1.Text + "törmäsit seinään" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimap38y
+                    laatta = 38
+                    TextBox1.Text = TextBox1.Text + "menit laattaan 38" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap36x
+                    laatta = 36
+                    TextBox1.Text = TextBox1.Text + "menit laattaan 36" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+
+            Case 38
+
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap39y
+                    laatta = 39
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 39" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap38x
+                    TextBox1.Text = TextBox1.Text + "törmäsit seinään" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimap38y
+                    TextBox1.Text = TextBox1.Text + "törmäsit seinään" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap37x
+                    laatta = 37
+                    TextBox1.Text = TextBox1.Text + "menit laattaan 37" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+
+            Case 37
+
+                If b = 1 Then
+                    PictureBox1.Image = My.Resources.minimap36y
+                    laatta = 36
+                    TextBox1.Text = TextBox1.Text + "menit laatalle 36" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 2 Then
+                    PictureBox1.Image = My.Resources.minimap38x
+                    laatta = 38
+                    TextBox1.Text = TextBox1.Text + "menit laattaan 38" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 3 Then
+                    PictureBox1.Image = My.Resources.minimap37y
+                    TextBox1.Text = TextBox1.Text + "törmäsit seinään" & vbCrLf & vbCrLf
+                    Return
+                End If
+                If b = 4 Then
+                    PictureBox1.Image = My.Resources.minimap29x
+                    laatta = 29
+                    TextBox1.Text = TextBox1.Text + "menit laattaan 29" & vbCrLf & vbCrLf
+                    Return
+                End If
+
+
+
+
+        End Select
+    End Sub
+
+
+    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    End Sub
+
+    Private Sub PictureBox1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
+
+    End Sub
+ 
+End Class

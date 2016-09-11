@@ -1,0 +1,26 @@
+C:\Documents and Settings\l110894.LUC\Local Settings\Application Data\Temporary Projects\TextbasedHangover\bin\Debug\TextbasedHangover.exe
+C:\Documents and Settings\l110894.LUC\Local Settings\Application Data\Temporary Projects\TextbasedHangover\bin\Debug\TextbasedHangover.pdb
+C:\Documents and Settings\l110894.LUC\Local Settings\Application Data\Temporary Projects\TextbasedHangover\bin\Debug\TextbasedHangover.xml
+C:\Documents and Settings\l110894.LUC\Local Settings\Application Data\Temporary Projects\TextbasedHangover\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\l110894.LUC\Local Settings\Application Data\Temporary Projects\TextbasedHangover\obj\x86\Debug\TextbasedHangover.Form1.resources
+C:\Documents and Settings\l110894.LUC\Local Settings\Application Data\Temporary Projects\TextbasedHangover\obj\x86\Debug\TextbasedHangover.Resources.resources
+C:\Documents and Settings\l110894.LUC\Local Settings\Application Data\Temporary Projects\TextbasedHangover\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\l110894.LUC\Local Settings\Application Data\Temporary Projects\TextbasedHangover\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\l110894.LUC\Local Settings\Application Data\Temporary Projects\TextbasedHangover\obj\x86\Debug\TextbasedHangover.exe
+C:\Documents and Settings\l110894.LUC\Local Settings\Application Data\Temporary Projects\TextbasedHangover\obj\x86\Debug\TextbasedHangover.xml
+C:\Documents and Settings\l110894.LUC\Local Settings\Application Data\Temporary Projects\TextbasedHangover\obj\x86\Debug\TextbasedHangover.pdb
+K:\ohjelmointi\TextbasedHangover\TextbasedHangover\obj\x86\Debug\TextbasedHangover.exe
+K:\ohjelmointi\TextbasedHangover\TextbasedHangover\obj\x86\Debug\TextbasedHangover.xml
+K:\ohjelmointi\TextbasedHangover\TextbasedHangover\obj\x86\Debug\TextbasedHangover.pdb
+K:\ohjelmointi\TextbasedHangover\TextbasedHangover\bin\Debug\TextbasedHangover.exe
+K:\ohjelmointi\TextbasedHangover\TextbasedHangover\bin\Debug\TextbasedHangover.pdb
+K:\ohjelmointi\TextbasedHangover\TextbasedHangover\bin\Debug\TextbasedHangover.xml
+K:\ohjelmointi\TextbasedHangover\TextbasedHangover\obj\x86\Debug\ResolveAssemblyReference.cache
+K:\ohjelmointi\TextbasedHangover\TextbasedHangover\obj\x86\Debug\TextbasedHangover.Form1.resources
+K:\ohjelmointi\TextbasedHangover\TextbasedHangover\obj\x86\Debug\TextbasedHangover.Resources.resources
+K:\ohjelmointi\TextbasedHangover\TextbasedHangover\obj\x86\Debug\GenerateResource.read.1.tlog
+K:\ohjelmointi\TextbasedHangover\TextbasedHangover\obj\x86\Debug\GenerateResource.write.1.tlog
+K:\ohjelmointi\TextbasedHangover\TextbasedHangover\obj\x86\Debug\TextbasedHangover.start.resources
+K:\ohjelmointi\TextbasedHangover\TextbasedHangover\obj\x86\Debug\TextbasedHangover.Help.resources
+K:\ohjelmointi\TextbasedHangover\TextbasedHangover\obj\x86\Debug\TextbasedHangover.inven.resources
+K:\ohjelmointi\TextbasedHangover\TextbasedHangover\obj\x86\Debug\TextbasedHangover.victory.resources
