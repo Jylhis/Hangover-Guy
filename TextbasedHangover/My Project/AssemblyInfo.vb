@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("LAPPIA")> 
 <Assembly: AssemblyProduct("TextbasedHangover")> 
-<Assembly: AssemblyCopyright("Copyright © LAPPIA 2012")> 
+<Assembly: AssemblyCopyright("Copyright © Markus Jylhänkangas 2012")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
