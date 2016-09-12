@@ -1,4 +1,4 @@
-﻿Public Class start
+Public Class start
 
     Private Sub start_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 

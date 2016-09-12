@@ -1,4 +1,4 @@
-﻿Module laatta
+Module laatta
     Public laatta As String
     'Random numbers
     Public showerNum As String 'for Shower

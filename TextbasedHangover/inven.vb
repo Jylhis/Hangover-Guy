@@ -1,4 +1,4 @@
-﻿Public Class inven
+Public Class inven
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Me.Hide()
