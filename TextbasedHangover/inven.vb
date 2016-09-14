@@ -1,12 +1,9 @@
 Public Class inven
-
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Me.Hide()
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-
-
         'AXE voi ottaa 2 paikkaa
         If TextBox1.Text = "Axe" And laatta.laatta = 33 And laatta.Axe = 0 And laatta.TvOpen = 1 Then
             Form1.ListBox1.Items.Add("Axe")
@@ -16,8 +13,6 @@ Public Class inven
             Form1.ListBox1.Items.Add("Axe")
             laatta.Axe = 1
             Me.Hide()
-
-
 
             'KEY
         ElseIf TextBox1.Text = "Key" And laatta.laatta = 47 And laatta.Key = 0 Then

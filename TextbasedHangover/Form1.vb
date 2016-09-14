@@ -1,9 +1,4 @@
 Public Class Form1
-
-    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
         End
     End Sub
@@ -39,14 +34,12 @@ Public Class Form1
         Liikunta(laatta.laatta, 2)
     End Sub
 
-
     Private Sub Liikunta(ByRef laatta, ByVal b) 'vaihtaa laatan yhtä isommaksi tai pienemmäksi, tai sitten pudottaa rotkoon
 
         Select Case laatta
 
             Case 0 'Where you are
                 If b = 1 Then 'where you go if you press north
-
                     Return
                 End If
                 If b = 2 Then 'where you go if you press east
@@ -64,7 +57,6 @@ Public Class Form1
                     PictureBox1.Image = My.Resources.minimap0
                     Return
                 End If
-
 
             Case 1
                 If b = 1 Then
@@ -113,7 +105,6 @@ Public Class Form1
                     Return
                 End If
 
-
             Case 3
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap6y
@@ -135,7 +126,6 @@ Public Class Form1
                     laatta = 4
                     Return
                 End If
-
 
             Case 4
                 If b = 1 Then
@@ -159,8 +149,6 @@ Public Class Form1
                     Return
                 End If
 
-
-
             Case 5
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap5y
@@ -182,8 +170,6 @@ Public Class Form1
 
                     Return
                 End If
-
-
 
             Case 6
                 If b = 1 Then
@@ -208,13 +194,9 @@ Public Class Form1
                     Return
                 End If
 
-
-
-
             Case 7
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap7y
-
                     Return
                 End If
                 If b = 2 Then
@@ -242,10 +224,7 @@ Public Class Form1
                     Return
                 End If
 
-
-
             Case 8
-
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap7y
                     laatta = 7
@@ -267,10 +246,7 @@ Public Class Form1
                     Return
                 End If
 
-
-
             Case 9
-
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap8y
                     laatta = 8
@@ -293,9 +269,7 @@ Public Class Form1
                     Return
                 End If
 
-
             Case 10
-
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap9y
                     laatta = 9
@@ -319,9 +293,7 @@ Public Class Form1
                     Return
                 End If
 
-
             Case 11
-
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap12y
                     laatta = 12
@@ -329,7 +301,6 @@ Public Class Form1
                 End If
                 If b = 2 Then
                     PictureBox1.Image = My.Resources.minimap11x
-
                     Return
                 End If
                 If b = 3 Then
@@ -342,10 +313,7 @@ Public Class Form1
                     Return
                 End If
 
-
-
             Case 12
-
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap41y
                     laatta = 41
@@ -354,7 +322,6 @@ Public Class Form1
                 End If
                 If b = 2 Then
                     PictureBox1.Image = My.Resources.minimap12x
-
                     Return
                 End If
                 If b = 3 Then
@@ -369,7 +336,6 @@ Public Class Form1
                 End If
 
             Case 41
-
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap12y
                     laatta = 12
@@ -395,7 +361,6 @@ Public Class Form1
 
 
             Case 48
-
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap41y
                     laatta = 41
@@ -417,7 +382,6 @@ Public Class Form1
 
 
             Case 39
-
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap39y
                     Return
@@ -441,7 +405,6 @@ Public Class Form1
 
 
             Case 38
-
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap39y
                     laatta = 39
@@ -466,7 +429,6 @@ Public Class Form1
 
 
             Case 37
-
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap36y
                     laatta = 36
@@ -488,10 +450,7 @@ Public Class Form1
                     Return
                 End If
 
-
-
             Case 36
-
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap36y
                     Return
@@ -512,10 +471,7 @@ Public Class Form1
                     Return
                 End If
 
-
-
             Case 47
-
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap34y
                     laatta = 34
@@ -536,10 +492,7 @@ Public Class Form1
                     Return
                 End If
 
-
-
             Case 34
-
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap34y
                     TextBox1.Text = TextBox1.Text + "The TV in front of you doens't seem to be working. With a screwdriver you could get it open and see whats wrong." & vbCrLf & vbCrLf
@@ -562,13 +515,9 @@ Public Class Form1
                     Return
                 End If
 
-
-
             Case 33
-
                 If b = 1 Then
                     PictureBox1.Image = My.Resources.minimap33y
-
                     Return
                 End If
                 If b = 2 Then
@@ -1163,12 +1112,8 @@ Public Class Form1
                     laatta = 49
                     TextBox1.Text = TextBox1.Text + "You went to the shower" & vbCrLf & vbCrLf
                     ListBox1.Items.Add("Shower")
-
-
                     Return
                 End If
-
-
 
             Case 49
                 If b = 1 Then
@@ -1322,8 +1267,6 @@ Public Class Form1
 
             Case 59
                 If b = 1 Then
-
-
                     If Bath_door = 0 Then
                         PictureBox1.Image = My.Resources.minimap59y
                         TextBox1.Text = TextBox1.Text + " DAMN! Door is locked. I should break the lock somehow..." & vbCrLf & vbCrLf
@@ -1481,19 +1424,6 @@ Public Class Form1
         End Select
     End Sub
 
-
-    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-    End Sub
-
-    Private Sub PictureBox1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub Button9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-
-    End Sub
-
     Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.Click
         inven.Show()
         inven.Label1.Visible = False 'hide item not found text
@@ -1501,14 +1431,11 @@ Public Class Form1
     End Sub
 
     Private Sub Button9_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button9.Click
-
-
         If ListBox1.SelectedItem = "Axe" And laatta.laatta = 59 Then 'AXE 
             TextBox1.Text = TextBox1.Text + "You smashed the doors lock" & vbCrLf & vbCrLf
             Bath_door = 1
         ElseIf ListBox1.SelectedItem = "Axe" Then
             TextBox1.Text = TextBox1.Text + "HULK SMASH!" & vbCrLf & vbCrLf
-
 
         ElseIf ListBox1.SelectedItem = "Shower" And laatta.laatta = 49 Then 'Shower thoughts
             Randomize() 'randomize numbers
@@ -1525,10 +1452,8 @@ Public Class Form1
                 TextBox1.Text = TextBox1.Text + "You turn the water on and start thinking...  So, if guns don't kill people, people kill people... does that mean toasters don't toast toast, toast toast toast?" & vbCrLf & vbCrLf
             End If
 
-
         ElseIf ListBox1.SelectedItem = "Computer" And laatta.laatta = 10 Then 'Computer googling
             TextBox1.Text = TextBox1.Text + "It seems that you have been googling 'how to fix TV with an axe'. The screwdriver must be somewhere around here." & vbCrLf + "How drunk i was last night?" & vbCrLf & vbCrLf
-
 
         ElseIf ListBox1.SelectedItem = "Screwdriver" And laatta.laatta = 33 Then 'Open TV
             TextBox1.Text = TextBox1.Text + "You open your TV and see axe inside there" & vbCrLf & vbCrLf
@@ -1542,7 +1467,6 @@ Public Class Form1
         ElseIf ListBox1.SelectedItem = "Screwdriver" Then
             TextBox1.Text = TextBox1.Text + "You can't use that here" & vbCrLf & vbCrLf
 
-
         ElseIf ListBox1.SelectedItem = "Fridge" And laatta.laatta = 24 Then 'Fridge lock
             If laatta.Fridge = 0 Then
                 TextBox1.Text = TextBox1.Text + "It seems that somebody has locked the fridge with chain" & vbCrLf & vbCrLf
@@ -1550,8 +1474,6 @@ Public Class Form1
                 laatta.Fridge = 1
                 TextBox1.Text = TextBox1.Text + "Hurray! You see the Coke inside the fridge" & vbCrLf & vbCrLf
             End If
-
-
 
         ElseIf ListBox1.SelectedItem = "Toilet" And laatta.laatta = 61 Then 'Toilet Magic
             laatta.Toilet = 1
@@ -1585,5 +1507,4 @@ Public Class Form1
             TextBox1.Text = TextBox1.Text + "I should go get something to drink..." & vbCrLf & vbCrLf
         End If
     End Sub
-
 End Class
